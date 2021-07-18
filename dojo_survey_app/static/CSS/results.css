@@ -68,7 +68,10 @@ h2 {
     width: 860px;
     height: 150px;
     margin: 0 0 0 45px;
+    padding: 1px;
     border: 2px solid black;
+    display: block;
+    overflow:auto;
 }
 
 #footer {

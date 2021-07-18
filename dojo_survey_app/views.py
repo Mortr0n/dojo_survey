@@ -8,9 +8,11 @@ def results(request):
         'name' : request.POST["name"],
         'location'	: request.POST['location'],
         'language'	: request.POST['language'],
+        'comments'  : request.POST['comments'],
     }
     if request.method=="POST":
         name = request.POST["name"]
         location = request.POST["location"]
         language = request.POST["language"]
+        comments = request.POST["comments"]
     return render(request, "results.html", context)
