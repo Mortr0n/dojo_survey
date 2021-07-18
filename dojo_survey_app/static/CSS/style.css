@@ -11,32 +11,74 @@
 }
 
 #wrapper {
-    background-color: darkorange;
     width: 960px;
     height: 800px;
     margin: 0 auto;
     padding: 10px 0 0 0;
+    border: 4px solid black;
+    background-color:darkcyan;
 }
 
 #topFormBox {
-    background-color: orangered;
     width: 940px;
     height: 380px;
     margin: 5px auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-
+.formDiv {
+    width: 930px;
+    height: 50px;
+    margin: 20px;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+}
+.inputBox {
+    width: 250px;
+}
+/* .topLabel {
+    display: flex;
+} */
 
 #commentBox {
-    background-color: darkgoldenrod;
     width: 940px;
     height: 300px;
     margin: 5px auto;
 }
 
+#comments_label {
+    font-size: 25px;
+    margin: 0 0 0 25px;
+}
+
+.comments_area {
+    width: 900px;
+    height: 240px;
+    margin: 10px 0 0 20px;
+    border: 4px solid black;
+}
+
 #footerBox {
-    background-color: orange;
     width: 940px;
     height: 80px;
     margin: 5px auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#submit_button {
+    width: 80px;
+    height: 40px;
+    margin: 0 10px 0 0;
+    padding: 10px 10px 15px 15px;
+    color: white;
+    background-color: rgb(13, 83, 214);
+    border-radius: 5px;
+    box-shadow: 3px 3px black;
+    display: flex;
 }
