@@ -1,0 +1,42 @@
+* {
+    vertical-align: baseline;
+    font-weight: inherit;
+    font-family: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    border: 0 none;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+}
+
+#wrapper {
+    background-color: darkorange;
+    width: 960px;
+    height: 800px;
+    margin: 0 auto;
+    padding: 10px 0 0 0;
+}
+
+#topFormBox {
+    background-color: orangered;
+    width: 940px;
+    height: 380px;
+    margin: 5px auto;
+}
+
+
+
+#commentBox {
+    background-color: darkgoldenrod;
+    width: 940px;
+    height: 300px;
+    margin: 5px auto;
+}
+
+#footerBox {
+    background-color: orange;
+    width: 940px;
+    height: 80px;
+    margin: 5px auto;
+}
