@@ -2,3 +2,15 @@ from django.shortcuts import render, redirect, HttpResponse
 
 def index(request):
     return render(request, "index.html")
+
+def results(request):
+    context = {
+        'name' : request.POST["name"],
+        'location'	: request.POST['location'],
+        'language'	: request.POST['language'],
+    }
+    if request.method=="POST":
+        name = request.POST["name"]
+        location = request.POST["location"]
+        language = request.POST["language"]
+    return render(request, "results.html", context)

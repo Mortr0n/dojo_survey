@@ -1,0 +1,91 @@
+* {
+    vertical-align: baseline;
+    font-weight: inherit;
+    font-family: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    border: 0 none;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.innerBox{
+    width: 960px;
+    margin: 0 auto;
+}
+
+#wrapper {
+    height: 620px;
+    width: 960px;
+    padding: 10px 0 0 0;
+    border: 2px solid black;
+    margin: 0 auto;
+}
+
+#header {
+    height: 100px;
+    display: flex;
+}
+
+h2 {
+    font-size: 35px;
+    margin: 55px 0 0 15px;
+    text-decoration: underline;
+}
+
+#userOutput {
+    width: 915px;
+    height: 140px;
+    padding: 25px 0 0 45px
+}
+
+.outContainer {
+    width: 910px;
+    height: 40px;
+}
+
+.outputBox {
+    width: 250px;
+    height: 30px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#commentOutput {
+    height: 250px;
+}
+
+#commentLabel {
+    width: 250px;
+    margin: 0 0 10px 45px;
+    height: 30px;
+    display: inline-block;
+    display: block;
+}
+
+#commentOut {
+    width: 860px;
+    height: 150px;
+    margin: 0 0 0 45px;
+    border: 2px solid black;
+}
+
+#footer {
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+#back_button {
+    width: 80px;
+    height: 40px;
+    margin: 0 60px 25px 0;
+    padding: 10px 10px 15px 15px;
+    color: white;
+    background-color: rgb(13, 83, 214);
+    border-radius: 5px;
+    box-shadow: 3px 3px black;
+    display: flex;
+}

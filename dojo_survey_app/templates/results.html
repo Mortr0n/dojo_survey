@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results Page</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'CSS/results.css' %}">
+    <script src="{% static 'JavaScript/script.js' %}"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header" class="innerBox">
+            <h2>Submitted Info</h2>
+        </div>
+        
+      
+        <div id="userOutput" class="innerBox">
+            <div class="outContainer">
+                <label name="nameLabel" class="outputBox">Name:</label>
+                
+                <p class="outputBox" id="name">{{name}}</p>
+            </div>
+            <div class="outContainer">
+                <label name="locationLabel" class="outputBox">Dojo Location:</label>
+            <p class="outputBox" id="locationOut">{{location}}</p>
+            </div>
+            <div class="outContainer">
+                <label name="languageLabel" class="outputBox">Favorite Language:</label>
+            <p class="outputBox" id="languageOut">{{language}}</p>
+            </div>
+        </div>
+        <div id="commentOutput" class="innerBox">
+            <label name="comentLabel"  id="commentLabel">Comment:</label>
+            <p class="outputBox" id="commentOut">{{comments}}</p>
+        </div>
+        <div id="footer" class="innerBox">
+            <form action="/">
+                <input type="submit" value="Go Back" id="back_button">
+            </form>
+        </div>
+    </div>
+
+
+</body>
+</html>

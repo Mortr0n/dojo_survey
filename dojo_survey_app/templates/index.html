@@ -12,42 +12,46 @@
 
 <body>
     <div id="wrapper">
+        <form class="userInputs" action="/results" method="Post">
+            {% csrf_token %}
         <div id="topFormBox">
-            <form class="userInputs">
+            
                 <div class="formDiv">
-                    <label for="your_name" class="inputBox">Your Name:</label>
-                    <input class="inputBox" type="text" id="your_name" name="your_name">
+                    <label for="name" class="inputBox">Your Name:</label>
+                    <input class="inputBox" type="text" id="name" name="name">
                 </div>
+            
                 <div class="formDiv">
-                    <label for="location_select" class="inputBox">Dojo Location:</label>
-                    <select name="location_select" class="inputBox">
-                        <option value="san_jose">San Jose</option>
-                        <option value="san_jose">New York</option>
-                        <option value="san_jose">Seattle</option>
-                        <option value="san_jose">Tacoma</option>
-                        <option value="san_jose">Los Angeles</option>
+                    <label for="location" class="inputBox">Dojo Location:</label>
+                    <select name="location" class="inputBox" id="location">
+                        <option value="San Jose">San Jose</option>
+                        <option value="New York">New York</option>
+                        <option value="Seattle">Seattle</option>
+                        <option value="Tacoma">Tacoma</option>
+                        <option value="Los Angeles">Los Angeles</option>
                     </select>
                 </div>
                 <div class="formDiv">
-                    <label for="language_select" class="inputBox">Favorite Language:</label>
-                    <select name="language_select" class="inputBox">
-                        <option value="Python">Python</option>
-                        <option value="Java">Java</option>
-                        <option value="C##">C##</option>
-                        <option value="JavaScript">JavaScript</option>
-                        <option value="C++">C++</option>
+                    <label for="language" class="inputBox">Favorite Language:</label>
+                    <select name="language" class="inputBox" id="language">
+                        <option name="language" value="Python">Python</option>
+                        <option name="language" value="Java">Java</option>
+                        <option name="language" value="C##">C##</option>
+                        <option name="language" value="JavaScript">JavaScript</option>
+                        <option name="language" value="C++">C++</option>
                     </select>
                 </div>
-            </form>
+            
 
         </div>
         <div id="commentBox">
             <label for="comments_area" class="inputBox" id="comments_label">Comments(optional):</label>
-            <textarea name="comments_area" class="comments_area">Comments go here...</textarea>
+            <textarea name="comments_area" class="comments_area" id="comments">Comments go here...</textarea>
         </div>
         <div id="footerBox">
             <input type="submit" value="Submit" id="submit_button">
         </div>
+        </form>
     </div>
 </body>
 
