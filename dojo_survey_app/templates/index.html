@@ -12,15 +12,15 @@
 
 <body>
     <div id="wrapper">
-        <form class="userInputs" action="/results" method="Post">
+        <form class="userInputs" action="/session_items" method="Post">
             {% csrf_token %}
-        <div id="topFormBox">
-            
+            <div id="topFormBox">
+
                 <div class="formDiv">
                     <label for="name" class="inputBox">Your Name:</label>
                     <input class="inputBox" type="text" id="name" name="name">
                 </div>
-            
+
                 <div class="formDiv">
                     <label for="location" class="inputBox">Dojo Location:</label>
                     <select name="location" class="inputBox" id="location">
@@ -41,16 +41,14 @@
                         <option name="language" value="C++">C++</option>
                     </select>
                 </div>
-            
-
-        </div>
-        <div id="commentBox">
-            <label for="comments" class="inputBox" id="comments_label">Comments(optional):</label>
-            <textarea name="comments"  id="comments">Comments go here...</textarea>
-        </div>
-        <div id="footerBox">
-            <input type="submit" value="Submit" id="submit_button">
-        </div>
+            </div>
+            <div id="commentBox">
+                <label for="comments" class="inputBox" id="comments_label">Comments(optional):</label>
+                <textarea name="comments" id="comments">Comments go here...</textarea>
+            </div>
+            <div id="footerBox">
+                <input type="submit" value="Submit" id="submit_button">
+            </div>
         </form>
     </div>
 </body>
